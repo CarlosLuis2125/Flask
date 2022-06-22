@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>{{titulo}}</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <h1>Formulario Pessoa</h1>
+
+        <br>
+
+        <!--Campo Nome-->
+        <label id="nome" name="lNome"> Nome: </label>
+        <input type="text" id="tNome" name="tNovoNome" placeholder="Informe seu nome: ">
+
+        <br><br>
+
+        <!--Campo telefone-->
+        <label id="telefone" name="Ltelefone" > Telefone: </label>
+        <input type="text" id="tTelefone" name="tNovoTelefone" placeholder="(11) 99999-9999">
+
+        <br><br>
+
+        <!--Campo endereço-->
+        <label id="endereco" name="lEndereco"> Endereço: </label>
+        <input type="text" id="tEndereco" name="tNovoEndereco" placeholder="Informe seu endereço: ">
+
+        <br><br>
+
+        <!--Campo data de nascimento-->
+        <label id="data" name="lData"> Data de nascimento: </label>
+        <input type="date" id="tData" name="tNovaData">
+
+        <br><br>
+
+        <button type="submit"> Cadastrar </button>
+    </form>
+
+    <form action="/consultar.html" method="POST">
+        <button type="submit"> Consultar  tudo</button>
+    </form>
+    <br>
+
+    <a href="consultarCodigo.html"><button type="submit"> Consultar </button> </a>
+
+    <h6>{{ resultado }}</h6>
+</body>
+</html>
